@@ -1,8 +1,18 @@
-# HORUS Tools
+<div align="center">
+
+# 🔥 HORUS Tools
 
 **Outils opérationnels open source pour les sapeurs-pompiers — par [HORUS](https://www.gohorus.fr/)**
 
-🇬🇧 [English version](README.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Angular](https://img.shields.io/badge/Angular-18.2-dd0031.svg?logo=angular)](https://angular.dev/)
+[![Deploy](https://github.com/isaratech/horus-tools/actions/workflows/deploy.yml/badge.svg)](https://github.com/isaratech/horus-tools/actions)
+[![GitHub Issues](https://img.shields.io/github/issues/isaratech/horus-tools)](https://github.com/isaratech/horus-tools/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+🇬🇧 [English version](README.md) · [**Démo en ligne →**](https://isaratech.github.io/horus-tools/)
+
+</div>
 
 ---
 
@@ -29,7 +39,6 @@ Ces outils de calcul et d'aide à la décision, utilisés quotidiennement sur le
 |---|---|
 | **Calculateur ARI** | Autonomie et heure de sortie sous ARI |
 | **Contrôleur ARI** | Suivi des pressions ARI multi-binômes avec chronomètres |
-| **Lance rideau** | Caractéristiques des lances rideau d'eau (45 mm / 70 mm) |
 | **Mousse** | Besoins en émulseur et autonomie en mousse |
 
 ### Hydraulique
@@ -114,7 +123,7 @@ Cette commande génère le build avec le bon `base href` pour GitHub Pages.
 src/
   app/
     home/                    # Page d'accueil avec grille d'outils
-    tools/                   # 17 composants outils
+    tools/                   # 16 composants outils
       ari-calculator/
       ari-controller/
       fall-factor/
@@ -126,7 +135,6 @@ src/
       oxygen-therapy/
       pgr-decision/
       relay-calculator/
-      screen-hose/
       shoring-calculator/
       slope-calculator/
       volume-exhaustion/
@@ -141,12 +149,23 @@ src/
 
 ## Contribuer
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
+Les contributions sont les bienvenues ! Merci de lire le [Guide de contribution](CONTRIBUTING.md) avant de soumettre une Pull Request.
+
+Vous pouvez aussi aider en :
+- 🐛 [Signalant un bug](https://github.com/isaratech/horus-tools/issues/new?template=bug_report.yml)
+- 💡 [Proposant une fonctionnalité](https://github.com/isaratech/horus-tools/issues/new?template=feature_request.yml)
+- 📖 Améliorant la documentation
 
 ## Licence
 
 Ce projet est distribué sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
+> **Note sur les marques :** Le nom « HORUS » et tous les logos associés dans le répertoire `public/assets/` sont des marques d'Isara Technologies SAS et ne sont **pas** couverts par la licence MIT. Voir [LICENSE](LICENSE) pour plus de détails.
+
 ---
 
+<div align="center">
+
 *Développé par [Isara Technologies SAS](https://isaratech.com/) — Découvrez la plateforme complète [HORUS](https://www.gohorus.fr/) pour les SDIS.*
+
+</div>

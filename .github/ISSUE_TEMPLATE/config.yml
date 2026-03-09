@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/isaratech/horus-tools/discussions
+    about: Ask questions or share ideas in GitHub Discussions
+  - name: 🌐 HORUS Platform
+    url: https://www.gohorus.fr/
+    about: Discover the full HORUS platform for fire & rescue services

@@ -1,6 +1,28 @@
 {
   "name": "horus-tools",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Open source operational tools for firefighters — by HORUS",
+  "author": "Isara Technologies SAS <contact@isaratech.com> (https://isaratech.com/)",
+  "homepage": "https://isaratech.github.io/horus-tools/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaratech/horus-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isaratech/horus-tools/issues"
+  },
+  "keywords": [
+    "firefighter",
+    "sapeurs-pompiers",
+    "sdis",
+    "horus",
+    "operational-tools",
+    "angular",
+    "glasgow-score",
+    "scba",
+    "hydraulics",
+    "emergency-services"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,6 +32,7 @@
     "test": "ng test"
   },
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",

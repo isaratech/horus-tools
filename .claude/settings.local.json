@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(ng version)",
+      "Bash(npx @angular/cli@18 version)",
+      "Bash(npx @angular/cli@18 add @angular/material --skip-confirmation --theme=custom --typography=true --animations=enabled)",
+      "Bash(npx @angular/cli@18 add @angular/material --skip-confirmation --theme=custom --typography --animations=enabled)",
+      "Bash(npm install bootstrap @fortawesome/fontawesome-free)",
+      "Bash(npx @angular/cli@18 build --configuration development)",
+      "Bash(pkill -f \"ng serve\")",
+      "Bash(npx @angular/cli@18 build)",
+      "WebFetch(domain:www.spartan.ng)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4200/)",
+      "Bash(lsof -i :4200)",
+      "Bash(npm install -D tailwindcss postcss autoprefixer)"
+    ]
+  }
+}

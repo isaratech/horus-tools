@@ -1,8 +1,18 @@
-# HORUS Tools
+<div align="center">
+
+# 🔥 HORUS Tools
 
 **Open source operational tools for firefighters — by [HORUS](https://www.gohorus.fr/)**
 
-🇫🇷 [Version française](README.fr.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Angular](https://img.shields.io/badge/Angular-18.2-dd0031.svg?logo=angular)](https://angular.dev/)
+[![Deploy](https://github.com/isaratech/horus-tools/actions/workflows/deploy.yml/badge.svg)](https://github.com/isaratech/horus-tools/actions)
+[![GitHub Issues](https://img.shields.io/github/issues/isaratech/horus-tools)](https://github.com/isaratech/horus-tools/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+🇫🇷 [Version française](README.fr.md) · [**Live Demo →**](https://isaratech.github.io/horus-tools/)
+
+</div>
 
 ---
 
@@ -29,7 +39,6 @@ These calculation and decision-support tools, used daily in the field, are avail
 |---|---|
 | **SCBA Calculator** | Autonomy and exit time under SCBA |
 | **SCBA Controller** | Multi-team SCBA pressure monitoring with timers |
-| **Water Curtain Nozzle** | Water curtain nozzle specifications (45 mm / 70 mm) |
 | **Foam** | Foam concentrate requirements and foam autonomy |
 
 ### Hydraulics
@@ -114,7 +123,7 @@ This command generates the build with the correct `base href` for GitHub Pages.
 src/
   app/
     home/                    # Home page with tools grid
-    tools/                   # 17 tool components
+    tools/                   # 16 tool components
       ari-calculator/
       ari-controller/
       fall-factor/
@@ -126,7 +135,6 @@ src/
       oxygen-therapy/
       pgr-decision/
       relay-calculator/
-      screen-hose/
       shoring-calculator/
       slope-calculator/
       volume-exhaustion/
@@ -141,12 +149,23 @@ src/
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue or a pull request.
+Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) before submitting a Pull Request.
+
+You can also help by:
+- 🐛 [Reporting a bug](https://github.com/isaratech/horus-tools/issues/new?template=bug_report.yml)
+- 💡 [Requesting a feature](https://github.com/isaratech/horus-tools/issues/new?template=feature_request.yml)
+- 📖 Improving documentation
 
 ## License
 
 This project is licensed under the **MIT** License. See the [LICENSE](LICENSE) file for details.
 
+> **Trademark Notice:** The name "HORUS" and all associated logos in the `public/assets/` directory are trademarks of Isara Technologies SAS and are **not** covered by the MIT License. See [LICENSE](LICENSE) for details.
+
 ---
 
+<div align="center">
+
 *Developed by [Isara Technologies SAS](https://isaratech.com/) — Discover the full [HORUS](https://www.gohorus.fr/) platform for fire & rescue services.*
+
+</div>
