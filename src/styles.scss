@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 36 91% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 10%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 36 91% 96%;
+    --accent-foreground: 36 91% 30%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 36 91% 53%;
+    --radius: 0.625rem;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 9%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 5.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 5.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 36 91% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 14%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 210 20% 14%;
+    --muted-foreground: 215 16% 65%;
+    --accent: 210 20% 14%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 36 91% 53%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 9%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    min-height: 100vh;
+  }
+}
+
+/* ── Mobile responsive improvements ── */
+@layer base {
+  /* Ensure card padding is smaller on mobile */
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+  /* Better touch targets on mobile */
+  @media (pointer: coarse) {
+    select, button {
+      min-height: 44px;
+    }
+  }
+}
+
+/* ── Custom range slider (shadcn style) ── */
+@layer components {
+  input[type='range'] {
+    @apply w-full h-2 rounded-full appearance-none cursor-pointer bg-secondary;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 rounded-full bg-primary border-2 border-primary-foreground shadow-md;
+    margin-top: -2px;
+  }
+  input[type='range']::-moz-range-thumb {
+    @apply w-5 h-5 rounded-full bg-primary border-2 border-primary-foreground shadow-md;
+  }
+  input[type='range']:focus {
+    @apply outline-none;
+  }
+  input[type='range']:focus::-webkit-slider-thumb {
+    @apply ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+/* ── SVG body diagram (Wallace Rule) ── */
+.body-diagram {
+  cursor: pointer;
+}
+.body-diagram .body-part rect,
+.body-diagram .body-part circle {
+  fill: hsl(var(--muted));
+  stroke: hsl(var(--border));
+  stroke-width: 1.5px;
+  transition: fill 0.2s, stroke 0.2s;
+  cursor: pointer;
+}
+.body-diagram .body-part:hover rect,
+.body-diagram .body-part:hover circle {
+  fill: hsl(var(--primary) / 0.25);
+  stroke: hsl(var(--primary) / 0.5);
+}
+.body-diagram .body-part.selected rect,
+.body-diagram .body-part.selected circle {
+  fill: hsl(var(--primary));
+  stroke: hsl(var(--primary));
+}
+.body-diagram .body-part.selected:hover rect,
+.body-diagram .body-part.selected:hover circle {
+  fill: hsl(var(--primary) / 0.8);
+  stroke: hsl(var(--primary) / 0.8);
+}
+.body-diagram .percentage {
+  fill: hsl(var(--muted-foreground));
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+  user-select: none;
+}
+.body-diagram .percentage.small {
+  font-size: 9px;
+}
+.body-diagram .body-part.selected .percentage {
+  fill: hsl(var(--primary-foreground));
+}

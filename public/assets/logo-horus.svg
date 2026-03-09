@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- HORUS Eagle/Hawk Logo -->
+  <g transform="translate(20, 15) scale(0.8)">
+    <!-- Main body -->
+    <path d="M100 20 C60 20, 30 50, 25 90 C20 130, 50 170, 100 190 C150 170, 180 130, 175 90 C170 50, 140 20, 100 20Z" fill="#f4991a"/>
+    <!-- Eagle head silhouette -->
+    <path d="M70 55 C75 40, 95 35, 110 40 L130 48 C140 52, 150 45, 155 38 L150 55 C145 65, 135 68, 125 65 L115 60 C105 56, 90 58, 85 65 L80 75 C75 82, 70 80, 68 72 Z" fill="white"/>
+    <!-- Eye -->
+    <circle cx="95" cy="55" r="4" fill="#f4991a"/>
+    <!-- Beak -->
+    <path d="M68 72 L55 78 L68 68 Z" fill="white"/>
+    <!-- Wing detail left -->
+    <path d="M40 95 C45 80, 55 75, 70 78 L65 95 C60 105, 50 108, 40 105 Z" fill="white" opacity="0.9"/>
+    <!-- Wing detail right -->
+    <path d="M160 95 C155 80, 145 75, 130 78 L135 95 C140 105, 150 108, 160 105 Z" fill="white" opacity="0.9"/>
+    <!-- Body feathers -->
+    <path d="M75 100 C80 90, 90 85, 100 85 C110 85, 120 90, 125 100 L120 120 C115 135, 105 145, 100 148 C95 145, 85 135, 80 120 Z" fill="white" opacity="0.85"/>
+    <!-- Talons -->
+    <path d="M80 155 L75 170 M85 158 L82 172 M115 158 L118 172 M120 155 L125 170" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
