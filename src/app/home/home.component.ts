@@ -90,7 +90,6 @@ export class HomeComponent {
       tools: [
         { name: 'Calculatrice ARI', route: '/ari-calculator', icon: 'calculator', description: 'Autonomie & heure de sortie' },
         { name: 'Contrôleur ARI', route: '/ari-controller', icon: 'timer', description: 'Suivi équipes sous ARI' },
-        { name: 'Lance Écran', route: '/screen-hose', icon: 'shield', description: 'Portées lance écran' },
         { name: 'Mousse', route: '/foam', icon: 'droplets', description: 'Besoins en émulseur' },
       ]
     },

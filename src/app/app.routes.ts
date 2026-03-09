@@ -36,11 +36,6 @@ export const routes: Routes = [
     data: { title: 'Contrôleur ARI' }
   },
   {
-    path: 'screen-hose',
-    loadComponent: () => import('./tools/screen-hose/screen-hose.component').then(m => m.ScreenHoseComponent),
-    data: { title: 'Lance Écran' }
-  },
-  {
     path: 'foam',
     loadComponent: () => import('./tools/foam/foam.component').then(m => m.FoamComponent),
     data: { title: 'Calculatrice Mousse' }
