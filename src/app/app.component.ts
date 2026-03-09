@@ -19,7 +19,7 @@ import { filter, map } from 'rxjs/operators';
           <lucide-icon name="arrow-left" [size]="18"></lucide-icon>
         </button>
         <a *ngIf="!showBack" routerLink="/" class="flex items-center gap-2.5 mr-4">
-          <img src="assets/logo-horus.svg" alt="HORUS" class="w-8 h-8">
+          <img src="assets/logo-horus-icon.png" alt="HORUS" class="w-8 h-8">
           <span class="text-sm font-bold tracking-tight text-foreground">HORUS <span class="font-normal text-muted-foreground">Tools</span></span>
         </a>
         <h1 *ngIf="showBack" class="text-sm font-semibold tracking-tight">{{ pageTitle }}</h1>

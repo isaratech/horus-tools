@@ -26,11 +26,11 @@ interface ToolItem {
     <div class="relative overflow-hidden bg-gradient-to-br from-[#0d232e] to-[#1a3a4a] text-white">
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 -translate-y-1/4 translate-x-1/4">
-          <img src="assets/logo-horus.svg" alt="" class="w-full h-full opacity-20">
+          <img src="assets/logo-horus-invert.png" alt="" class="w-full h-full opacity-20">
         </div>
       </div>
       <div class="container relative py-8 md:py-10 text-center">
-        <img src="assets/logo-horus.svg" alt="HORUS" class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3">
+        <img src="assets/logo-horus-invert.png" alt="HORUS" class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 object-contain">
         <h1 class="text-2xl md:text-3xl font-bold tracking-tight mb-1">HORUS Tools</h1>
         <p class="text-sm text-white/60 font-medium">Outils opérationnels pour sapeurs-pompiers</p>
       </div>
@@ -62,7 +62,7 @@ interface ToolItem {
 
       <footer class="text-center py-4 md:py-6 border-t">
         <div class="flex items-center justify-center gap-2 mb-1">
-          <img src="assets/logo-horus.svg" alt="HORUS" class="w-5 h-5 opacity-60">
+          <img src="assets/logo-horus-icon.png" alt="HORUS" class="w-5 h-5 opacity-60">
           <span class="text-xs font-semibold text-muted-foreground">HORUS Tools</span>
         </div>
         <p class="text-[10px] text-muted-foreground/60">Isara Technologies &mdash; gohorus.fr</p>
@@ -112,7 +112,6 @@ export class HomeComponent {
         { name: 'Convertisseur Gaz', route: '/gas-converter', icon: 'wind', description: 'Conversion ppm / %' },
         { name: 'Calcul Mouflage', route: '/mouflage', icon: 'link', description: 'Force de traction' },
         { name: 'Facteur de Chute', route: '/fall-factor', icon: 'arrow-down-to-line', description: 'Gravité chute corde' },
-        { name: "Zone d'Exclusion", route: '/exclusion-zone', icon: 'circle-alert', description: 'Zone exclusion NRBC' },
         { name: 'Calculateur Pente', route: '/slope', icon: 'mountain', description: 'Pente et propagation feu' },
         { name: 'Calage / Étaiement', route: '/shoring', icon: 'boxes', description: 'Charge admissible' },
         { name: 'Décision PGR/PGC', route: '/pgr', icon: 'fuel', description: 'Procédure gaz' },

@@ -1,55 +1,75 @@
 # HORUS Tools
 
-**Operational tools for French firefighters (Sapeurs-Pompiers)**
+**Open source operational tools for firefighters — by [HORUS](https://www.gohorus.fr/)**
 
-A lightweight, mobile-first web app built with Angular 18 and Tailwind CSS. HORUS Tools provides essential field calculators and decision-support tools used daily by fire departments.
+🇫🇷 [Version française](README.fr.md)
 
-## Features
+---
 
-### Emergency Medical Response
-- **Glasgow Coma Scale** — Consciousness evaluation (GCS scoring)
-- **Malinas Score** — Imminent delivery risk assessment
-- **Wallace Rule** — Body surface area burned (interactive body diagram)
-- **Oxygen Therapy** — O2 bottle autonomy calculator
+[HORUS](https://www.gohorus.fr/) graciously open sources a selection of tools from its full operational platform, designed for **SDIS** (French Departmental Fire and Rescue Services) and all firefighters.
 
-### Fire Operations
-- **ARI Calculator** — SCBA autonomy & exit time
-- **ARI Controller** — Multi-team SCBA pressure tracking with timers
-- **Screen Hose** — Water curtain lance specifications (45mm / 70mm)
-- **Foam Calculator** — Foam concentrate requirements & emulsifier autonomy
+These calculation and decision-support tools, used daily in the field, are available here as a lightweight, mobile-first web application built with Angular and Tailwind CSS.
+
+> 💡 Want to discover the full HORUS platform? Visit **[www.gohorus.fr](https://www.gohorus.fr/)**.
+
+## Available Tools
+
+### Person Rescue (SAP)
+
+| Tool | Description |
+|---|---|
+| **Glasgow Score** | Consciousness level assessment (GCS scale) |
+| **Malinas Score** | Imminent delivery risk assessment |
+| **Wallace Rule** | Burned body surface area (interactive body diagram) |
+| **Oxygen Therapy** | O₂ cylinder autonomy calculation |
+
+### Fire
+
+| Tool | Description |
+|---|---|
+| **SCBA Calculator** | Autonomy and exit time under SCBA |
+| **SCBA Controller** | Multi-team SCBA pressure monitoring with timers |
+| **Water Curtain Nozzle** | Water curtain nozzle specifications (45 mm / 70 mm) |
+| **Foam** | Foam concentrate requirements and foam autonomy |
 
 ### Hydraulics
-- **Relay Calculator** — Number of pump engines required for relay
-- **Water Losses** — Hydraulic pressure loss calculations
-- **Volume Exhaustion** — Time to exhaust a water source
+
+| Tool | Description |
+|---|---|
+| **Relay** | Number of engines required for a relay |
+| **Pressure Losses** | Hydraulic pressure loss calculation |
+| **Volume Exhaustion** | Water supply point exhaustion time |
 
 ### Road Rescue & Specialized
-- **Gas Converter** — ppm / % conversion
-- **Mouflage Calculator** — Pulley system traction force
-- **Fall Factor** — Rope fall severity evaluation
-- **Exclusion Zone** — CBRN exclusion zone calculator
-- **Slope Calculator** — Terrain slope & fire propagation
-- **Shoring Calculator** — Admissible load for shoring/cribbing
-- **PGR/PGC Decision** — Gas procedure decision support (12-question flow)
+
+| Tool | Description |
+|---|---|
+| **Gas Converter** | ppm / % conversion |
+| **Block & Tackle** | Pulling force calculation for a block and tackle system |
+| **Fall Factor** | Fall severity assessment in rope rescue |
+| **Slope** | Slope calculation and fire propagation |
+| **Shoring** | Allowable load for shoring / cribbing |
+| **PGR/PGC Decision** | Gas procedure decision support (12-step questionnaire) |
 
 ## Tech Stack
 
-| Technology | Version | Purpose |
+| Technology | Version | Role |
 |---|---|---|
 | Angular | 18.2 | Standalone component architecture |
-| Tailwind CSS | 3.4 | Utility-first styling |
+| Tailwind CSS | 3.4 | Utility-first CSS framework |
 | Lucide Icons | 0.577 | SVG icon library |
-| TypeScript | 5.5 | Type-safe development |
+| TypeScript | 5.5 | Static typing |
 
-## Getting Started
+## Quick Start
 
 ### Prerequisites
+
 - Node.js 18+ and npm
 
 ### Installation
 
 ```bash
-git clone https://github.com/IsMusic/horus-tools.git
+git clone https://github.com/isaratech/horus-tools.git
 cd horus-tools
 npm install
 ```
@@ -60,7 +80,7 @@ npm install
 npm start
 ```
 
-Navigate to `http://localhost:4200/`. The app auto-reloads on file changes.
+The application is available at `http://localhost:4200/` and automatically reloads on every change.
 
 ### Production Build
 
@@ -68,17 +88,17 @@ Navigate to `http://localhost:4200/`. The app auto-reloads on file changes.
 npm run build
 ```
 
-Build output is in `dist/horus-tools/browser/`.
+Build output is located in `dist/horus-tools/browser/`.
 
 ## Deployment
 
-### GitHub Pages (Automated)
+### GitHub Pages (automated)
 
 The project includes a GitHub Actions workflow that automatically deploys to GitHub Pages on every push to `main`.
 
 1. Push your code to GitHub
 2. Go to **Settings > Pages > Source** and select **GitHub Actions**
-3. The site will be available at `https://ismusic.github.io/horus-tools/`
+3. The site will be available at `https://isaratech.github.io/horus-tools/`
 
 ### Manual Deployment
 
@@ -86,18 +106,17 @@ The project includes a GitHub Actions workflow that automatically deploys to Git
 npm run build:ghpages
 ```
 
-This builds with the correct base href for GitHub Pages.
+This command generates the build with the correct `base href` for GitHub Pages.
 
 ## Project Structure
 
 ```
 src/
   app/
-    home/                    # Home page with tool grid
-    tools/                   # 18 tool components
+    home/                    # Home page with tools grid
+    tools/                   # 17 tool components
       ari-calculator/
       ari-controller/
-      exclusion-zone/
       fall-factor/
       foam/
       gas-converter/
@@ -120,17 +139,14 @@ src/
   index.html                 # Entry point
 ```
 
-## Design
+## Contributing
 
-- **HORUS brand colors**: Orange `#f4991a` primary, Navy `#0d232e` secondary
-- **Mobile-first**: 2-column grid on phones, 4 columns on desktop
-- **Component architecture**: Each tool is a standalone Angular component
-- **Bundle size**: ~304 kB initial (gzipped ~86 kB)
+Contributions are welcome! Feel free to open an issue or a pull request.
 
 ## License
 
-Proprietary - Isara Technologies. All rights reserved.
+This project is licensed under the **MIT** License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-*Part of the [HORUS](https://www.gohorus.fr/) operational platform for fire departments.*
+*Developed by [Isara Technologies SAS](https://isaratech.com/) — Discover the full [HORUS](https://www.gohorus.fr/) platform for fire & rescue services.*

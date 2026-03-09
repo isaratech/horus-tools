@@ -76,11 +76,6 @@ export const routes: Routes = [
     data: { title: 'Facteur de Chute' }
   },
   {
-    path: 'exclusion-zone',
-    loadComponent: () => import('./tools/exclusion-zone/exclusion-zone.component').then(m => m.ExclusionZoneComponent),
-    data: { title: "Zone d'Exclusion" }
-  },
-  {
     path: 'slope',
     loadComponent: () => import('./tools/slope-calculator/slope-calculator.component').then(m => m.SlopeCalculatorComponent),
     data: { title: 'Calculateur de Pente' }
