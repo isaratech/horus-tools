@@ -73,14 +73,17 @@ interface ToolItem {
 export class HomeComponent {
   categories: ToolCategory[] = [
     {
-      label: 'Secours à Personne',
+      label: 'Secours à Personne (SUAP)',
       colorClass: 'text-emerald-600',
       iconBgClass: 'bg-emerald-500/10',
       tools: [
         { name: 'Score de Glasgow', route: '/glasgow', icon: 'brain', description: 'Évaluation de la conscience' },
         { name: 'Score de Malinas', route: '/malinas', icon: 'baby', description: 'Risque accouchement inopiné' },
+        { name: 'Score APGAR', route: '/apgar', icon: 'heart-pulse', description: 'Évaluation néonatale' },
         { name: 'Règle de Wallace', route: '/wallace', icon: 'person-standing', description: 'Surface brûlée' },
         { name: 'Autonomie O₂', route: '/oxygen', icon: 'activity', description: 'Calcul autonomie oxygène' },
+        { name: 'Assistant Pédiatrique', route: '/pediatric', icon: 'stethoscope', description: 'Constantes et matériel enfant' },
+        { name: 'Triage NOVI', route: '/novi-triage', icon: 'list-checks', description: 'START/JumpSTART & SINUS' },
       ]
     },
     {
@@ -91,6 +94,8 @@ export class HomeComponent {
         { name: 'Calculatrice ARI', route: '/ari-calculator', icon: 'calculator', description: 'Autonomie & heure de sortie' },
         { name: 'Contrôleur ARI', route: '/ari-controller', icon: 'timer', description: 'Suivi équipes sous ARI' },
         { name: 'Mousse', route: '/foam', icon: 'droplets', description: 'Besoins en émulseur' },
+        { name: 'Calculateur VPP', route: '/vpp', icon: 'fan', description: 'Ventilation pression positive' },
+        { name: 'Aéraulique Tunnel', route: '/tunnel', icon: 'cone', description: 'Ventilation & relais souterrain' },
       ]
     },
     {
@@ -104,16 +109,43 @@ export class HomeComponent {
       ]
     },
     {
-      label: 'Secours Routier / Spécifique',
+      label: 'Feux de Forêt (FDF)',
+      colorClass: 'text-red-600',
+      iconBgClass: 'bg-red-500/10',
+      tools: [
+        { name: 'Propagation FDF', route: '/fdf-propagation', icon: 'tree-pine', description: 'Cinématique front de flamme' },
+        { name: 'Appui Aérien', route: '/aerial-support', icon: 'plane', description: 'Transit et synchronisation ABE' },
+        { name: 'Calculateur Pente', route: '/slope', icon: 'mountain', description: 'Pente et propagation feu' },
+      ]
+    },
+    {
+      label: 'Risques Chimiques (RCH)',
       colorClass: 'text-orange-600',
       iconBgClass: 'bg-orange-500/10',
       tools: [
+        { name: 'Zonage RCH', route: '/rch-zoning', icon: 'radiation', description: 'Périmètre de sécurité réflexe' },
+        { name: 'Risque Explosion', route: '/explosion-risk', icon: 'bomb', description: 'LIE/LSE et BLEVE' },
         { name: 'Convertisseur Gaz', route: '/gas-converter', icon: 'wind', description: 'Conversion ppm / %' },
+        { name: 'Décision PGR/PGC', route: '/pgr', icon: 'fuel', description: 'Procédure gaz' },
+      ]
+    },
+    {
+      label: 'Gestion Opérationnelle (GOC)',
+      colorClass: 'text-violet-600',
+      iconBgClass: 'bg-violet-500/10',
+      tools: [
+        { name: 'Message Opérationnel', route: '/operational-message', icon: 'radio', description: 'Générateur bilan COS' },
+        { name: 'Sécurité DZ', route: '/dz-helicopter', icon: 'navigation', description: 'Zone de poser hélicoptère' },
+      ]
+    },
+    {
+      label: 'Secours Routier / Spécifique',
+      colorClass: 'text-sky-600',
+      iconBgClass: 'bg-sky-500/10',
+      tools: [
         { name: 'Calcul Mouflage', route: '/mouflage', icon: 'link', description: 'Force de traction' },
         { name: 'Facteur de Chute', route: '/fall-factor', icon: 'arrow-down-to-line', description: 'Gravité chute corde' },
-        { name: 'Calculateur Pente', route: '/slope', icon: 'mountain', description: 'Pente et propagation feu' },
         { name: 'Calage / Étaiement', route: '/shoring', icon: 'boxes', description: 'Charge admissible' },
-        { name: 'Décision PGR/PGC', route: '/pgr', icon: 'fuel', description: 'Procédure gaz' },
       ]
     },
   ];

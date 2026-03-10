@@ -24,14 +24,17 @@ Ces outils de calcul et d'aide à la décision, utilisés quotidiennement sur le
 
 ## Outils disponibles
 
-### Secours à personne (SAP)
+### Secours à personne (SUAP)
 
 | Outil | Description |
 |---|---|
 | **Score de Glasgow** | Évaluation de l'état de conscience (échelle GCS) |
 | **Score de Malinas** | Évaluation du risque d'accouchement imminent |
+| **Score APGAR** | Évaluation néonatale à 1, 5 et 10 minutes |
 | **Règle de Wallace** | Surface corporelle brûlée (schéma corporel interactif) |
 | **Oxygénothérapie** | Calcul d'autonomie de bouteille O₂ |
+| **Assistant Pédiatrique** | Constantes vitales, estimation poids, matériel intubation |
+| **Triage NOVI** | Triage de masse START/JumpSTART avec suivi SINUS |
 
 ### Incendie
 
@@ -40,6 +43,8 @@ Ces outils de calcul et d'aide à la décision, utilisés quotidiennement sur le
 | **Calculateur ARI** | Autonomie et heure de sortie sous ARI |
 | **Contrôleur ARI** | Suivi des pressions ARI multi-binômes avec chronomètres |
 | **Mousse** | Besoins en émulseur et autonomie en mousse |
+| **Calculateur VPP** | Dimensionnement ventilation par pression positive |
+| **Aéraulique Tunnel** | Ventilation et relais longue distance en souterrain |
 
 ### Hydraulique
 
@@ -49,16 +54,37 @@ Ces outils de calcul et d'aide à la décision, utilisés quotidiennement sur le
 | **Pertes de charge** | Calcul des pertes de charge hydrauliques |
 | **Épuisement de volume** | Temps d'épuisement d'un point d'eau |
 
+### Feux de Forêt (FDF)
+
+| Outil | Description |
+|---|---|
+| **Propagation FDF** | Simulateur cinématique du front de flamme |
+| **Appui Aérien** | Calcul de transit et synchronisation ABE |
+| **Pente** | Calcul de pente et propagation de feu |
+
+### Risques Chimiques (RCH)
+
+| Outil | Description |
+|---|---|
+| **Zonage RCH** | Assistant de périmètre de sécurité réflexe |
+| **Risque Explosion** | Jauge LIE/LSE et distances d'isolement BLEVE |
+| **Convertisseur gaz** | Conversion ppm / % |
+| **Décision PGR/PGC** | Aide à la décision procédure gaz (questionnaire en 12 étapes) |
+
+### Gestion Opérationnelle (GOC)
+
+| Outil | Description |
+|---|---|
+| **Message Opérationnel** | Générateur de bilan COS (structure METHANE) |
+| **Sécurité DZ** | Checklist zone de poser hélicoptère |
+
 ### Secours routier & spécialisé
 
 | Outil | Description |
 |---|---|
-| **Convertisseur gaz** | Conversion ppm / % |
 | **Mouflage** | Calcul de la force de traction d'un système de mouflage |
 | **Facteur de chute** | Évaluation de la gravité d'une chute en corde |
-| **Pente** | Calcul de pente et propagation de feu |
 | **Étaiement** | Charge admissible pour un étaiement / cribbage |
-| **Décision PGR/PGC** | Aide à la décision procédure gaz (questionnaire en 12 étapes) |
 
 ## Stack technique
 
@@ -123,21 +149,32 @@ Cette commande génère le build avec le bon `base href` pour GitHub Pages.
 src/
   app/
     home/                    # Page d'accueil avec grille d'outils
-    tools/                   # 16 composants outils
+    tools/                   # 27 composants outils
+      aerial-support/
+      apgar-score/
       ari-calculator/
       ari-controller/
+      dz-helicopter/
+      explosion-risk/
       fall-factor/
+      fdf-propagation/
       foam/
       gas-converter/
       glasgow-score/
       malinas-score/
       mouflage-calculator/
+      novi-triage/
+      operational-message/
       oxygen-therapy/
+      pediatric-assistant/
       pgr-decision/
+      rch-zoning/
       relay-calculator/
       shoring-calculator/
       slope-calculator/
+      tunnel-aeraulics/
       volume-exhaustion/
+      vpp-calculator/
       wallace-rule/
       water-losses/
     app.component.ts         # Layout racine avec header

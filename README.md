@@ -24,14 +24,17 @@ These calculation and decision-support tools, used daily in the field, are avail
 
 ## Available Tools
 
-### Person Rescue (SAP)
+### Person Rescue (SUAP)
 
 | Tool | Description |
 |---|---|
 | **Glasgow Score** | Consciousness level assessment (GCS scale) |
 | **Malinas Score** | Imminent delivery risk assessment |
+| **APGAR Score** | Neonatal assessment at 1, 5 and 10 minutes |
 | **Wallace Rule** | Burned body surface area (interactive body diagram) |
 | **Oxygen Therapy** | O₂ cylinder autonomy calculation |
+| **Pediatric Assistant** | Pediatric vital signs, weight estimation, intubation sizing |
+| **NOVI Triage** | START/JumpSTART mass casualty triage with SINUS tracking |
 
 ### Fire
 
@@ -40,6 +43,8 @@ These calculation and decision-support tools, used daily in the field, are avail
 | **SCBA Calculator** | Autonomy and exit time under SCBA |
 | **SCBA Controller** | Multi-team SCBA pressure monitoring with timers |
 | **Foam** | Foam concentrate requirements and foam autonomy |
+| **VPP Calculator** | Positive pressure ventilation dimensioning |
+| **Tunnel Aeraulics** | Underground ventilation and long-distance relay |
 
 ### Hydraulics
 
@@ -49,16 +54,37 @@ These calculation and decision-support tools, used daily in the field, are avail
 | **Pressure Losses** | Hydraulic pressure loss calculation |
 | **Volume Exhaustion** | Water supply point exhaustion time |
 
+### Wildfire (FDF)
+
+| Tool | Description |
+|---|---|
+| **FDF Propagation** | Fire front kinematic simulator (wind, slope, fuel) |
+| **Aerial Support** | ABE transit time and synchronization calculator |
+| **Slope** | Slope calculation and fire propagation |
+
+### Chemical Risks (RCH)
+
+| Tool | Description |
+|---|---|
+| **RCH Zoning** | Reflex safety perimeter assistant |
+| **Explosion Risk** | LEL/UEL gauge and BLEVE isolation distances |
+| **Gas Converter** | ppm / % conversion |
+| **PGR/PGC Decision** | Gas procedure decision support (12-step questionnaire) |
+
+### Operational Command (GOC)
+
+| Tool | Description |
+|---|---|
+| **Operational Message** | COS report generator (METHANE structure) |
+| **DZ Helicopter** | Helicopter landing zone safety checklist |
+
 ### Road Rescue & Specialized
 
 | Tool | Description |
 |---|---|
-| **Gas Converter** | ppm / % conversion |
 | **Block & Tackle** | Pulling force calculation for a block and tackle system |
 | **Fall Factor** | Fall severity assessment in rope rescue |
-| **Slope** | Slope calculation and fire propagation |
 | **Shoring** | Allowable load for shoring / cribbing |
-| **PGR/PGC Decision** | Gas procedure decision support (12-step questionnaire) |
 
 ## Tech Stack
 
@@ -123,21 +149,32 @@ This command generates the build with the correct `base href` for GitHub Pages.
 src/
   app/
     home/                    # Home page with tools grid
-    tools/                   # 16 tool components
+    tools/                   # 27 tool components
+      aerial-support/
+      apgar-score/
       ari-calculator/
       ari-controller/
+      dz-helicopter/
+      explosion-risk/
       fall-factor/
+      fdf-propagation/
       foam/
       gas-converter/
       glasgow-score/
       malinas-score/
       mouflage-calculator/
+      novi-triage/
+      operational-message/
       oxygen-therapy/
+      pediatric-assistant/
       pgr-decision/
+      rch-zoning/
       relay-calculator/
       shoring-calculator/
       slope-calculator/
+      tunnel-aeraulics/
       volume-exhaustion/
+      vpp-calculator/
       wallace-rule/
       water-losses/
     app.component.ts         # Root layout with header

@@ -26,6 +26,21 @@ export const routes: Routes = [
     data: { title: 'Autonomie Oxygénothérapie' }
   },
   {
+    path: 'pediatric',
+    loadComponent: () => import('./tools/pediatric-assistant/pediatric-assistant.component').then(m => m.PediatricAssistantComponent),
+    data: { title: 'Assistant Pédiatrique' }
+  },
+  {
+    path: 'apgar',
+    loadComponent: () => import('./tools/apgar-score/apgar-score.component').then(m => m.ApgarScoreComponent),
+    data: { title: 'Score APGAR' }
+  },
+  {
+    path: 'novi-triage',
+    loadComponent: () => import('./tools/novi-triage/novi-triage.component').then(m => m.NoviTriageComponent),
+    data: { title: 'Triage NOVI' }
+  },
+  {
     path: 'ari-calculator',
     loadComponent: () => import('./tools/ari-calculator/ari-calculator.component').then(m => m.AriCalculatorComponent),
     data: { title: 'Calculatrice ARI' }
@@ -39,6 +54,16 @@ export const routes: Routes = [
     path: 'foam',
     loadComponent: () => import('./tools/foam/foam.component').then(m => m.FoamComponent),
     data: { title: 'Calculatrice Mousse' }
+  },
+  {
+    path: 'vpp',
+    loadComponent: () => import('./tools/vpp-calculator/vpp-calculator.component').then(m => m.VppCalculatorComponent),
+    data: { title: 'Calculateur VPP' }
+  },
+  {
+    path: 'tunnel',
+    loadComponent: () => import('./tools/tunnel-aeraulics/tunnel-aeraulics.component').then(m => m.TunnelAeraulicsComponent),
+    data: { title: 'Aéraulique Tunnel' }
   },
   {
     path: 'relay',
@@ -56,9 +81,29 @@ export const routes: Routes = [
     data: { title: "Calculatrice d'Épuisement" }
   },
   {
+    path: 'fdf-propagation',
+    loadComponent: () => import('./tools/fdf-propagation/fdf-propagation.component').then(m => m.FdfPropagationComponent),
+    data: { title: 'Propagation FDF' }
+  },
+  {
+    path: 'aerial-support',
+    loadComponent: () => import('./tools/aerial-support/aerial-support.component').then(m => m.AerialSupportComponent),
+    data: { title: 'Appui Aérien' }
+  },
+  {
     path: 'gas-converter',
     loadComponent: () => import('./tools/gas-converter/gas-converter.component').then(m => m.GasConverterComponent),
     data: { title: 'Convertisseur Gaz' }
+  },
+  {
+    path: 'rch-zoning',
+    loadComponent: () => import('./tools/rch-zoning/rch-zoning.component').then(m => m.RchZoningComponent),
+    data: { title: 'Zonage RCH' }
+  },
+  {
+    path: 'explosion-risk',
+    loadComponent: () => import('./tools/explosion-risk/explosion-risk.component').then(m => m.ExplosionRiskComponent),
+    data: { title: 'Risque Explosion / BLEVE' }
   },
   {
     path: 'mouflage',
@@ -84,6 +129,16 @@ export const routes: Routes = [
     path: 'pgr',
     loadComponent: () => import('./tools/pgr-decision/pgr-decision.component').then(m => m.PgrDecisionComponent),
     data: { title: 'Décision PGR/PGC' }
+  },
+  {
+    path: 'operational-message',
+    loadComponent: () => import('./tools/operational-message/operational-message.component').then(m => m.OperationalMessageComponent),
+    data: { title: 'Message Opérationnel' }
+  },
+  {
+    path: 'dz-helicopter',
+    loadComponent: () => import('./tools/dz-helicopter/dz-helicopter.component').then(m => m.DzHelicopterComponent),
+    data: { title: 'Sécurité DZ Hélicoptère' }
   },
   { path: '**', redirectTo: '' }
 ];
