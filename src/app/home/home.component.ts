@@ -65,7 +65,7 @@ interface ToolItem {
           <img src="assets/logo-horus-icon.png" alt="HORUS" class="w-5 h-5 opacity-60">
           <span class="text-xs font-semibold text-muted-foreground">HORUS Tools</span>
         </div>
-        <p class="text-[10px] text-muted-foreground/60">Isara Technologies &mdash; gohorus.fr</p>
+        <p class="text-[10px] text-muted-foreground/60">Isara Technologies &mdash; <a href="https://gohorus.fr" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors hover:underline">gohorus.fr</a></p>
       </footer>
     </div>
   `,
